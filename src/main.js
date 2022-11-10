@@ -2,7 +2,7 @@
  * @file:
  * @author: llsunny
  * @lastEditor: llsunny
- * @update: 2022-11-08 17:19:34
+ * @update: 2022-11-10 15:28:37
  */
 /*
  * @Author: z_ly
@@ -21,8 +21,8 @@ import store from './store'
 import elementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 // import 'element-ui/packages/theme-chalk/src/index.scss'
-import winDesign from 'win-design'
-import 'win-design/lib/themes/default.css'
+// import winDesign from 'win-design'
+// import 'win-design/lib/themes/default.css'
 import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
@@ -37,7 +37,7 @@ Vue.use(VXETable)
 // Vue.use(Button)
 // Vue.use(TableColumn)
 Vue.use(elementUI)
-Vue.use(winDesign)
+// Vue.use(winDesign)
 Es6Promise.polyfill()
 /*
    毫秒数 转 年月日
