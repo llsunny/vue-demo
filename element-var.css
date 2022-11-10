@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+ * @file: 
+ * @author: llsunny
+ * @lastEditor: llsunny
+ * @update: 2022-11-08 17:46:09
+ */
+/* 改变主题色变量 */
+/* 改变 icon 字体路径变量，必需 */
+.test-class {
+  color: var(--COLOR-NORMAL, #2d5afa);
+  background: #000;
+  border-color: #fff;
+  width: 100px;
+}

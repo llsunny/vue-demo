@@ -1,0 +1,32 @@
+/**
+ * @file: 
+ * @author: llsunny
+ * @lastEditor: llsunny
+ * @update: 2022-11-08 17:46:09
+ */
+
+// :root {
+//   --COLOR-NORMAL: #2d5afa;
+//   --COLOR-NORMAL-RGB: 45, 90, 250;
+//   --COLOR-HOVER: #5175f4;
+//   --COLOR-PRESS: #1d39c4;
+//   --COLOR-NORMAL-BG: #eaeefe;
+//   --COLOR-ACTIVE-BG: #f3f5ff;
+//   --FONT-COLOR-NORMAL: #000;
+//   --FONT-COLOR-SECOND: #666;
+//   --FONT-COLOR-THIRD: #999;
+// }
+
+/* 改变主题色变量 */
+// $--color-primary: var(--COLOR-NORMAL, #2d5afa) !default;
+
+/* 改变 icon 字体路径变量，必需 */
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// @import "~element-ui/packages/theme-chalk/src/index"
+.test-class {
+  color: var(--COLOR-NORMAL, #2d5afa);
+  background: #000;
+  border-color: #fff;
+  width: 100px;
+}

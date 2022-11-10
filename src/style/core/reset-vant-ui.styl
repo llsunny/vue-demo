@@ -1,0 +1,156 @@
+.van-field
+  &::after
+    border-color #E0E0E0
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+    color $gray-font-color-x
+    font-size $font-size-15
+  input:-moz-placeholder, textarea:-moz-placeholder
+    color $gray-font-color-x
+    font-size $font-size-15
+  input::-moz-placeholder, textarea::-moz-placeholder
+    color $gray-font-color-x
+    font-size $font-size-15
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder
+    color $gray-font-color-x
+    font-size $font-size-15
+// 预约状态过滤弹窗样式
+.filter-dialog
+  width 90%
+  border-radius 8px
+  .van-dialog__header
+    padding 12px
+    text-align left
+  .van-dialog__footer
+    .van-dialog__confirm, .van-dialog__confirm:active
+      color $white-color
+      background $blue-color
+      .van-button
+        &__content
+          .van-button__text
+            height 100%
+            line-height 48px
+// 温馨提示弹窗演示重置
+.tips-dialog
+  width 90%
+  border-radius 8px
+  .van-dialog__content
+    padding 6px 10px 15px
+  .van-dialog__footer
+    .van-dialog__confirm, .van-dialog__confirm:active
+      color $white-color
+      background $blue-color
+      .van-button
+        &__content
+          .van-button__text
+            height 100%
+            line-height 48px
+// 预约异常弹窗样式
+.resError
+  padding 40px 22px
+  width 83%
+  text-align center
+  box-sizing border-box
+  .van-dialog__content
+    >img
+      width 74px
+      height 74px
+    .title
+      margin 21px 0 16px
+      color $gray-font-color
+      font-size $font-size-18
+    .des
+      color $gray-font-color
+      font-size $font-size-14
+    .button-group
+      padding-top 25px
+      .van-button
+        width 78px
+        height 30px
+        border none
+        font-size $font-size-14
+      .cancel-btn
+        margin-right 26px
+        background $gray-border-color
+// 注意事项弹窗样式
+.attention-dialog
+  display flex
+  flex-direction column
+  width 90%
+  height 80%
+  font-size $font-size-15
+  color $gray-font-color
+  .van-dialog__header
+    padding-top 0
+    font-weight bold
+    height 50px
+    line-height 50px
+  .van-dialog__content
+    display flex
+    flex-direction column
+    flex 1
+    padding 0 20px
+    line-height 1.5
+    overflow hidden
+    .text-content
+      flex 1
+      overflow auto
+      // box-sizing border-box
+    .checkbox-validate
+      padding-top 10px
+      .van-checkbox__label
+        color $gray-font-color-w
+        font-size $font-size-14
+    .confirm-button
+      text-align center
+      padding 20px 0
+      span
+        display inline-block
+        width 78px
+        height 30px
+        line-height 30px
+        background $blue-color
+        border-radius $border-radius-4
+        color $white-color
+        font-size $font-size-14
+        box-sizing border-box
+      .disabled
+        background $gray-border-color
+        color $gray-font-color-x
+  .van-dialog__footer
+    .van-dialog__confirm
+      .van-button__content
+        width 78px
+        height 30px
+        line-height 30px
+        background $blue-color
+        border-radius $border-radius-4
+        color $white-color
+        font-size $font-size-14
+.van-button--primary
+  font-size $font-size-16
+  background $blue-color
+  border-color $blue-color
+  box-shadow $box-shadow-blue
+  border-radius $border-radius-4
+.van-button--plain
+  background $white-color
+.van-button--plain.van-button--primary
+  color $blue-color-x
+  border-color $blue-color-x
+  box-shadow none
+.van-button--default
+  border-radius $border-radius-4
+  font-size $font-size-16
+  border-color $gray-font-color-x
+  color $gray-font-color
+.van-big-btn
+  margin-top 17px
+  width 100%
+  width 100%
+.van-middle-btn
+  width 116px
+  height 36px
+// 重置checkbox样式
+.van-checkbox__icon--checked .van-icon
+  background $blue-color
+  border-color $blue-color

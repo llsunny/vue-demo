@@ -1,0 +1,86 @@
+{
+  "name": "mobile-office",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "report-json": "vue-cli-service build --report-json"
+  },
+  "dependencies": {
+    "@winning-plugin/win-6.0-httpclient": "^1.0.13",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.15.6",
+    "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-css-wrap": "^0.1.2",
+    "his-request": "^0.2.4",
+    "js-base64": "^2.5.2",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "lodash-es": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "sass-resources-loader": "^2.2.5",
+    "stylus-resources-loader": "0.0.4",
+    "vue": "^2.6.10",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.0.1",
+    "vxe-table": "^3.5.9",
+    "win-design": "^2.0.3",
+    "xe-utils": "^3.1.11"
+  },
+  "devDependencies": {
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "chalk": "^4.1.2",
+    "element-theme-chalk": "^2.15.10",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass": "^1.56.0",
+    "sass-loader": "^7.3.1",
+    "style-resources-loader": "^1.4.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
