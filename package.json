@@ -9,6 +9,7 @@
     "report-json": "vue-cli-service build --report-json"
   },
   "dependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "core-js": "^2.6.5",
@@ -33,14 +34,20 @@
     "xe-utils": "^3.1.11"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.18.6",
     "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.4.0",
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^4.0.1",
+    "babel-preset-env": "^1.7.0",
     "chalk": "^4.1.2",
     "element-theme-chalk": "^2.15.10",
     "eslint": "^5.16.0",

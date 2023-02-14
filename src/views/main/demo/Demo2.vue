@@ -6,47 +6,6 @@
       highlight-current-row
       @current-change="(row, oldrow) =>handleCurrentChange(row, oldrow)"
     >
-      <!-- <el-table-column
-        label="名称"
-        prop="peItemNodeName"
-      >
-      </el-table-column>
-      <el-table-column
-        label="项目结果"
-        prop="resultText"
-      >
-        <template slot-scope="scope">
-          <template v-if="isShowInput(scope.row, scope.$index)">
-            <el-input-number
-              :ref="scope.$index"
-              v-model="scope.row.resultText"
-              :index="scope.$index"
-              :controls="false"
-              @focus="handleFocus(scope.row, scope.$index)"
-              @blur="handleBlur(scope.row, scope.$index)"
-              @keyup.enter.native=" e => saveAndNext(e)"
-            ></el-input-number>
-          </template>
-          <template v-else>
-            {{ scope.row.resultText }}
-          </template>
-        </template>
-      </el-table-column>
-      <el-table-column
-        label="单位"
-        prop="resultUnit"
-      >
-      </el-table-column>
-      <el-table-column
-        label="参考值"
-        prop="refRange"
-      >
-      </el-table-column>
-      <el-table-column
-        label="提示"
-        prop="resultPrompt"
-      >
-      </el-table-column> -->
       <template v-for="item in tbTitle">
         <el-table-column
           v-if="item.name === 'resultText'"
@@ -65,7 +24,7 @@
                 @keyup.enter.native=" e => saveAndNext(e)"
               ></el-input-number>
             </template>
-            <template>
+            <template v-else>
               {{ scope.row.resultText }}
             </template>
           </template>
@@ -83,16 +42,20 @@
 </template>
 
 <script type="text/ecmascript-6">
-// import Table from './components/Table.vue'//
-// import ElInputNumber from 'element-ui/packages/input-number/src/input-number.vue'
+import ElTable from 'element-ui/packages/table/src/table.vue'
+import ElTableColumn from 'element-ui/packages/table/src/table-column'
+import ElInputNumber from 'element-ui/packages/input-number/src/input-number.vue'
 // import ElInput from 'element-ui/packages/input/src/input.vue'
 // import BaseInput from './components/BaseInput.vue'
+// import example from './components/example'
 export default {
   components: {
-    // Table
-    // ElInputNumber,
+    ElTable,
+    ElTableColumn,
+    ElInputNumber
     // ElInput
     // BaseInput
+    // example
   },
   data() {
     return {
@@ -1381,6 +1344,7 @@ export default {
       this.currentRow = row
       this.currentRowIndex = this.tbData.findIndex(el => el.peItemNodeId === row.peItemNodeId)
       this.$nextTick(()=>{
+        console.log(this.$refs)
         console.log(this.$refs[this.currentRowIndex])
         // this.$refs[this.currentRowIndex][0].$children[0].focus()
         this.$refs[this.currentRowIndex][0].focus()

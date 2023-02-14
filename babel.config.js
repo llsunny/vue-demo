@@ -13,8 +13,8 @@ module.exports = {
         libraryName: 'element-ui',
         styleLibraryName: 'theme-chalk'
       }
-    ],
-    ['@vue/babel-plugin-jsx']
+    ]
+    // ['transform-vue-jsx']
     // // [
     // //   '@win-design/babel-plugin-import',
     // //   {

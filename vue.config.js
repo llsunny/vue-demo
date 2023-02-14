@@ -24,7 +24,7 @@ function resolve (dir) {
 module.exports = {
   filenameHashing: true,
   publicPath: './',
-  transpileDependencies: [],
+  transpileDependencies: ['element-ui'],
   chainWebpack: (config) => {
     // const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     // types.forEach((type) =>

@@ -18,7 +18,7 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store'
 // import {Table, TableColumn, Button} from 'element-ui'
-import elementUI from 'element-ui'
+// import elementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 // import 'element-ui/packages/theme-chalk/src/index.scss'
 // import winDesign from 'win-design'
@@ -36,7 +36,7 @@ Vue.use(VXETable)
 // Vue.use(Table)
 // Vue.use(Button)
 // Vue.use(TableColumn)
-Vue.use(elementUI)
+// Vue.use(elementUI)
 // Vue.use(winDesign)
 Es6Promise.polyfill()
 /*
